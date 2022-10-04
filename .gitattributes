@@ -1,0 +1,2 @@
+bin/clang-16 filter=lfs diff=lfs merge=lfs -text
+bin/flang-new filter=lfs diff=lfs merge=lfs -text
