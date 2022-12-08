@@ -1,3 +1,12 @@
+This is the release of Snapdragon LLVM ARM C/C++ compiler toolchain version 16.0.1. This is a minor revision update
+of the toolchain. 
+
+The following are the changes in the 16.0.1 release over the 16.0.0 release:
+
+1. Fix corner case in handling of vector types.
+2. Linker - Fix handling of reference to undefined function.
+3. Supress generation of movt instruction when generating code for stack guard.
+
 This is the release of Snapdragon LLVM ARM C/C++ compiler toolchain version
 16.0. This is a major revision update of the toolchain. 
 
