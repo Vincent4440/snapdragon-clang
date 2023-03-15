@@ -1,3 +1,17 @@
+This is the release of Snapdragon LLVM ARM C/C++ compiler toolchain version 16.0.5. This is a minor revision update
+of the toolchain.
+
+The following are the changes in the 16.0.5 release over the 16.0.4 release:
+
+1. Allow user overrides for empty sections in linker script.
+2. Linker support for NONE segment in text map file.
+3. Suppress linker warnings by default. Can be enabled through -Wall
+
+The following are the changes in the 16.0.4 release over the 16.0.3 release:
+
+1. Fix to avoid NOLOAD sections loaded with PHDRS.
+2. Fix for corner case in Auto vectorizer.
+
 This is the release of Snapdragon LLVM ARM C/C++ compiler toolchain version 16.0.3. This is a minor revision update
 of the toolchain.
 
