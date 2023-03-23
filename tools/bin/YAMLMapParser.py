@@ -39,6 +39,10 @@ class YAMLFile(object):
         '''Return Header->Architecture.'''
         return self.yamlfile['Header']['Architecture']
 
+    def get_abi_page_size(self) -> int:
+        '''Return Header->ABIPageSize.'''
+        return self.yamlfile['Header']['ABIPageSize']
+
     def get_emulation(self):
         '''Return Header->Emulation.'''
         return self.yamlfile['Header']['Emulation']
@@ -1001,6 +1005,7 @@ def handle_architecture(yamlfile):
     print("Architecture: " + yamlfile.get_architecture())
     print("Emulation: " + yamlfile.get_emulation())
     print("AddressSize: " + yamlfile.get_address_size())
+    print("ABIPageSize: " + hex(yamlfile.get_abi_page_size()))
 
 def get_symbol_type(sym, yamlfile):
     type = sym['Type']
